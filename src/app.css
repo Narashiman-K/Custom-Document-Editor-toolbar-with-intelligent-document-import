@@ -1,0 +1,269 @@
+/* /src/app.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+}
+
+/* ==================== PROFESSIONAL HEADER STYLES ==================== */
+
+.nutrient-header {
+  background-color: #1f2937;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.85;
+}
+
+.logo-image {
+  height: 1.75rem;
+  width: auto;
+  display: block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.65rem;
+  line-height: 1rem;
+  text-align: center;
+  padding: 0.375rem 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-radius: 0.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-link:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Navigation Button specific styles */
+.nav-button {
+  background: transparent;
+}
+
+.nav-button:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.open-document-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.open-document-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn-learn-more,
+.btn-contact-sales,
+.btn-contact-support {
+  font-size: 0.65rem;
+  line-height: 1rem;
+  padding: 0.375rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-learn-more {
+  border: 1px solid #c2b8ae;
+  color: #c2b8ae;
+  background-color: transparent;
+}
+
+.btn-learn-more:hover {
+  background-color: rgba(194, 184, 174, 0.1);
+  border-color: #d4cbc2;
+}
+
+.btn-contact-sales {
+  border: 1px solid #c2b8ae;
+  background-color: #c2b8ae;
+  color: #1a1414;
+}
+
+.btn-contact-sales:hover {
+  background-color: #d4cbc2;
+  border-color: #d4cbc2;
+}
+
+.btn-contact-support {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  background-color: transparent;
+}
+
+.btn-contact-support:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Header */
+@media (max-width: 1024px) {
+  .header-container {
+    gap: 0.75rem;
+  }
+
+  .nav-link {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.6rem;
+  }
+
+  .btn-learn-more,
+  .btn-contact-sales,
+  .btn-contact-support {
+    padding: 0.375rem 0.875rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nutrient-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .header-left {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo-image {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-link {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.6rem;
+  }
+}
+
+/* ==================== APP STYLES ==================== */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8fafc;
+}
+
+.App-viewer {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  height: calc(100vh - 70px);
+}
+
+.viewer-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.ImportDocuments custom-import-documents {
+  width: 50px;
+  height: 50px;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 20 20' style='color:%20var(--bui-color-icon-primary);'><path fill-rule='evenodd' d='M10%2020c5.523%200%2010-4.477%2010-10S15.523%200%2010%200%200%204.477%200%2010s4.477%2010%2010%2010m0-15.56L5.97%208.47a.75.75%200%201%200%201.06%201.06l2.22-2.22v7.19a.75.75%200%200%200%201.5%200V7.31l2.22%202.22a.75.75%200%200%200%201.06-1.06z'%20clip-rule='evenodd'></path></svg>"),
+    no-repeat center;
+}
+
+/* ==================== LOADING OVERLAY ANIMATION ==================== */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
