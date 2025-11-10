@@ -66,6 +66,9 @@ The production-ready files will be generated in the `dist` folder.
 npm run preview
 ```
 
+### Demo
+https://github.com/user-attachments/assets/4fb31ec1-b4ea-493b-bb5a-0567bef13e66
+
 ## Folder Structure
 
 ```
