@@ -9,8 +9,6 @@ A React + Vite application demonstrating advanced document editing capabilities 
 - **Automatic Conversion**: Seamlessly converts non-PDF files to PDF using Nutrient's headless mode
 - **Document Merging**: Appends imported documents to the end of the current document
 - **Loading Indicators**: Visual feedback during conversion and import operations
-- **Rich Text Support**: Full rich text editing capabilities
-- **Undo/Redo History**: Complete document editing history
 
 ## Prerequisites
 
@@ -24,8 +22,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd nutrient-vite-cdn-general-document-editor-import-grantebvv-poc
+git clone https://github.com/Narashiman-K/Custom-Document-Editor-toolbar-with-intelligent-document-import.git
+cd Custom-Document-Editor-toolbar-with-intelligent-document-import
 ```
 
 ### 2. Install Dependencies
@@ -42,7 +40,7 @@ Create a `.env` file in the root directory and add your Nutrient license key:
 VITE_lkey=YOUR_LICENSE_KEY_HERE
 ```
 
-Replace `YOUR_LICENSE_KEY_HERE` with your actual Nutrient Web SDK license key.
+Replace `YOUR_LICENSE_KEY_HERE` with your actual Nutrient Web SDK license key or leave it empty for trial.
 
 ### 4. Run the Development Server
 
